@@ -1,0 +1,17 @@
+%--------------------------------------------------------%
+%-- Some useful commands to use in the thesis template --%
+%--------------------------------------------------------%
+
+%---------------------------------------------
+%It generats an abstract in book documents.
+\newenvironment{abstract}%
+    { \thispagestyle{empty}\null\vfill\begin{center}%
+    \bfseries\abstractname\end{center}}%
+    {\vfill\null}
+%--------------------------------------------
+%It generats a blank page.
+\newenvironment{blankpage}%
+    {\newpage \mbox{} \thispagestyle{empty}
+    }
+%--------------------------------------------
+

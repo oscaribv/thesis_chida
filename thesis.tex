@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Template to builp up a thesis     %%
+%% Written by Oscar Barragán 09-01-14 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper,twoside,openright]{book}
+
+ \include{paquetes/packages} %All the magic stuffs are here
+
+ \begin{document}
+
+  \include{paquetes/comandos} %some comands previously defined
+
+  \frontmatter %the first pages of the thesis
+
+  \include{frontmatter/portada}	
+  \blankpage	
+  \include{frontmatter/dedicatoria}	
+  \blankpage	
+  \include{frontmatter/resumen}	
+  \tableofcontents % it generates authomatically a index
+  \listoffigures
+  \listoftables
+
+  \mainmatter %The fun part of the thesis 
+
+  \include{mainmatter/introduction}
+  \include{mainmatter/chap1}		
+  \include{mainmatter/chap2}	
+  \include{mainmatter/conclusions}
+
+  \appendix % This indicates here starts an appendix
+
+  \include{./appendix/ap1}	
+			
+  \backmatter % The references are here
+
+  %bib file called refs.bib, generated with Mendeley http://www.mendeley.com/
+  \bibliography{bibliography/refs}
+  %ADS bib style, more details in http://ads.harvard.edu/pubs/bibtex/
+  \bibliographystyle{bibliography/astroads}
+
+ \end{document}
