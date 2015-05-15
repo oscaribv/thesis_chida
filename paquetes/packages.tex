@@ -18,9 +18,17 @@
 \usepackage[round,authoryear]{natbib}
 \usepackage{url}
 \usepackage{doi}
-\usepackage{fancyvrb}
+
 %fancy chapters -> http://mirror.utexas.edu/ctan/macros/latex/contrib/fncychap/fncychap.pdf
-\usepackage[Lenny]{fncychap}
+%\usepackage[Sonny]{fncychap}
+\usepackage[Sonny]{fncychap}
+\ChNameUpperCase   
+%\ChNameUpperCase   
+\ChNameVar{\centering\Huge\rm\bfseries}
+\ChNumVar{\Huge}  
+\ChRuleWidth{2pt}
+\ChTitleVar{\centering\Huge\rm}
+
 \spanishdecimal{.}
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables for horizontal lines
 
@@ -42,9 +50,9 @@
     %pdfkeywords={keyword1} {key2} {key3}, % list of keywords
     %pdfnewwindow=true,      % links in new window
     colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=cyan,          % color of internal links (change box color with linkbordercolor)
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
     citecolor=blue,        % color of links to bibliography
     filecolor=magenta,      % color of file links
-    urlcolor=red         % color of external links
+    urlcolor=gray         % color of external links
 }
 
