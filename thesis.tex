@@ -5,39 +5,51 @@
 
 \documentclass[10pt,letterpaper,twoside,openright]{book}
 
- \include{paquetes/packages} %All the magic stuffs are here
-
+ %All the magic stuffs are here
+ \include{paquetes/packages} 
+ %start document
  \begin{document}
-
-  \include{paquetes/commands} %some comands previously defined
-
-  \frontmatter %the first pages of the thesis
-
-  \include{frontmatter/front}	
-  \include{frontmatter/template}	
-  \include{frontmatter/dedicatory}	
-  \blankpage	
-  \include{frontmatter/abstract}	
-  \tableofcontents % it generates authomatically a index
-  \include{frontmatter/acronyms}
-  \listoffigures
-  \listoftables
-
-  \mainmatter %The fun part of the thesis 
-
-  \include{mainmatter/introduction}
-  \include{mainmatter/chap2}
-  \include{mainmatter/conclusions}
-			
-  \backmatter % The references are here
-
-  \appendix % This indicates here starts an appendix
-
-  \include{appendix/ap1}	
-
-  %bib file called refs.bib, generated with Mendeley http://www.mendeley.com/
-  \bibliography{bibliography/refs}
-  %ADS bib style, more details in http://ads.harvard.edu/pubs/bibtex/
-  \bibliographystyle{bibliography/astroads}
-
+  %some comands previously defined
+  \include{paquetes/commands}   
+  %the first pages of the thesis
+  \frontmatter 
+    %front page of the thesis, contains university and alumn details
+    \include{frontmatter/front}	
+    %This file contains some information of the template
+    \include{frontmatter/template}	
+    %You can write a dedicatory here
+    \include{frontmatter/dedicatory}	
+    \blankpage	
+    %Write your abstract here
+    \include{frontmatter/abstract}
+    % it generates authomatically a index	
+    \tableofcontents 
+    % it generates authomatically a list of figures
+    \listoffigures
+    % it generates authomatically a list of tables
+    \listoftables
+    %Define acronyms for your thesis
+    \include{frontmatter/acronyms}
+  %The fun part of the thesis 
+  \mainmatter 
+  	%Each file is a different chapter, you can create all the chapters
+  	%you need
+  	%A chapter called introduction
+    \include{mainmatter/introduction}
+    %The second chapter of the thesis
+    \include{mainmatter/chap2}
+    %The conclusions of the thesis
+    \include{mainmatter/conclusions}	
+  %In the backmatter section you can include an appendix and bibliograpy	
+  \backmatter 
+    % This indicates here starts an appendix
+    \appendix
+    %The appendix file 
+    \include{appendix/ap1}
+    %Starting with the bibliography using bibtex	
+    %bib file called refs.bib, it was generated with Mendeley http://www.mendeley.com/
+    \bibliography{bibliography/refs}
+    %ADS bib style, more details in http://ads.harvard.edu/pubs/bibtex/
+    \bibliographystyle{bibliography/astroads}
+    
  \end{document}
