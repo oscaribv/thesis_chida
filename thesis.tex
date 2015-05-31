@@ -9,15 +9,15 @@
 
  \begin{document}
 
-  \include{paquetes/comandos} %some comands previously defined
+  \include{paquetes/commands} %some comands previously defined
 
   \frontmatter %the first pages of the thesis
 
-  \include{frontmatter/portada}	
+  \include{frontmatter/front}	
   \include{frontmatter/template}	
-  \include{frontmatter/dedicatoria}	
+  \include{frontmatter/dedicatory}	
   \blankpage	
-  \include{frontmatter/resumen}	
+  \include{frontmatter/abstract}	
   \tableofcontents % it generates authomatically a index
   \listoffigures
   \listoftables
@@ -27,12 +27,12 @@
   \include{mainmatter/introduction}
   \include{mainmatter/chap2}
   \include{mainmatter/conclusions}
+			
+  \backmatter % The references are here
 
   \appendix % This indicates here starts an appendix
 
   \include{appendix/ap1}	
-			
-  \backmatter % The references are here
 
   %bib file called refs.bib, generated with Mendeley http://www.mendeley.com/
   \bibliography{bibliography/refs}
