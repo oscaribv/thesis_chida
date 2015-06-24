@@ -40,16 +40,17 @@
     \include{mainmatter/chap2}
     %The conclusions of the thesis
     \include{mainmatter/conclusions}	
+  %Using the appendixt.sty package
+  %This is a more general enviroment
+  \begin{appendices} 
+     \include{appendix/ap1}	
+  \end{appendices}  
   %In the backmatter section you can include an appendix and bibliograpy	
   \backmatter 
-    % This indicates here starts an appendix
-    \appendix
-    %The appendix file 
-    \include{appendix/ap1}
-    %Starting with the bibliography using bibtex	
-    %bib file called refs.bib, it was generated with Mendeley http://www.mendeley.com/
-    \bibliography{bibliography/refs}
-    %ADS bib style, more details in http://ads.harvard.edu/pubs/bibtex/
-    \bibliographystyle{bibliography/astroads}
+  %Starting with the bibliography using bibtex	
+  %bib file called refs.bib, it was generated with Mendeley http://www.mendeley.com/
+  \bibliography{bibliography/refs}
+  %ADS bib style, more details in http://ads.harvard.edu/pubs/bibtex/
+  \bibliographystyle{bibliography/astroads}
     
  \end{document}
